@@ -10,6 +10,7 @@ RUN yum install -y tar xz wget \
 ENV PYTHON_VERSION            3.11.1
 ENV PYTHON_PIP_VERSION        22.3.1
 ENV PYTHON_SETUPTOOLS_VERSION 65.5.0
+ENV TEST_PARAMS               1.1.1
 
 RUN set -eux; \
     url="https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; \
